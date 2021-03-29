@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.card {
+  padding: 25px 30px;
+  border-radius: 10px; }
+  .card:nth-child(1) {
+    background: #7541c8 no-repeat url("../images/bg-pattern-quotation.svg");
+    background-position: 80% top;
+    color: white;
+    box-shadow: 30px 40px 30px -30px rgba(0, 0, 0, 0.2); }
+    .card:nth-child(1) .card__body {
+      color: #bda4e5; }
+    .card:nth-child(1) .imageDescription__header--secondary {
+      color: #bda4e5; }
+  .card:nth-child(2) {
+    background-color: #48556a;
+    color: white;
+    box-shadow: 30px 40px 30px -30px rgba(0, 0, 0, 0.2); }
+  .card:nth-child(3) {
+    background-color: white;
+    box-shadow: 30px 40px 30px -30px rgba(0, 0, 0, 0.2); }
+  .card:nth-child(4) {
+    background-color: white;
+    order: 1;
+    box-shadow: 30px 20px 30px 0px rgba(0, 0, 0, 0.1); }
+  .card:nth-child(5) {
+    background-color: #19212e;
+    color: white;
+    box-shadow: 30px 40px 30px -30px rgba(0, 0, 0, 0.2); }
+  .card__photo {
+    display: flex;
+    align-items: center; }
+  .card__image {
+    border-radius: 50%;
+    transform: scale(0.9);
+    margin-right: 18px; }
+  .card__imageDescription {
+    border-radius: 50%; }
+  .card__header {
+    font-size: 1.5em;
+    padding: 10px 0;
+    font-weight: 600; }
+  .card__body {
+    line-height: 1.2;
+    color: #999999; }
+
+.imageDescription__header {
+  font-weight: 500; }
+  .imageDescription__header--secondary {
+    font-size: .9em;
+    font-weight: 500;
+    color: #999999; }
+
+@media (min-width: 1350px) {
+  .card:nth-child(1) {
+    grid-area: 2/2/3/4; }
+  .card:nth-child(2) {
+    grid-area: 2/4/3/5; }
+  .card:nth-child(3) {
+    grid-area: 2/5/4/6; }
+  .card:nth-child(4) {
+    grid-area: 3/2/4/3; }
+  .card:nth-child(5) {
+    grid-area: 3/3/4/5; } }
+.container {
+  display: grid;
+  grid-gap: 30px;
+  height: 100%;
+  padding: 17vh 8vw;
+  background-color: #ecf2f8;
+  font-family: 'Barlow Semi Condensed', sans-serif; }
+
+@media (min-width: 1350px) {
+  .container {
+    height: 100vh;
+    padding: 0;
+    grid-template: 1fr repeat(2, minmax(150px, 300px)) 1fr/1fr repeat(4, minmax(200px, 300px)) 1fr; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,117 @@
+.card {
+    padding: 25px 30px;
+    border-radius: 10px;
+
+    &:nth-child(1) {
+
+        background: $violet no-repeat url("../images/bg-pattern-quotation.svg");
+        background-position: 80% top;
+        color: $white;
+        box-shadow: 30px 40px 30px -30px rgba(0, 0, 0, 0.2);
+
+        & .card__body {
+            color: $lightViolet;
+        }
+
+        & .imageDescription__header--secondary {
+
+            color: $lightViolet;
+        }
+    }
+
+    &:nth-child(2) {
+
+        background-color: $grayishblue;
+        color: $white;
+        box-shadow: 30px 40px 30px -30px rgba(0, 0, 0, 0.2);
+    }
+
+    &:nth-child(3) {
+
+        background-color: $white;
+        box-shadow: 30px 40px 30px -30px rgba(0, 0, 0, 0.2);
+    }
+
+    &:nth-child(4) {
+
+        background-color: $white;
+        order: 1;
+        box-shadow: 30px 20px 30px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    &:nth-child(5) {
+
+        background-color: $blackishblue;
+        color: $white;
+        box-shadow: 30px 40px 30px -30px rgba(0, 0, 0, 0.2);
+    }
+
+    &__photo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__image {
+        border-radius: 50%;
+        transform: scale(.9);
+        margin-right: 18px;
+    }
+
+    &__imageDescription {
+        border-radius: 50%;
+    }
+
+    &__header {
+        font-size: 1.5em;
+        padding: 10px 0;
+        font-weight: 600;
+    }
+
+    &__body {
+
+        line-height: 1.2;
+        color: $gray;
+    }
+}
+
+.imageDescription {
+    &__header {
+        font-weight: 500;
+
+        &--secondary {
+
+            font-size: .9em;
+            font-weight: 500;
+            color: $gray;
+        }
+    }
+}
+
+@media (min-width: 1350px) {
+    .card {
+
+        &:nth-child(1) {
+
+            grid-area: 2/2/3/4;
+        }
+
+        &:nth-child(2) {
+
+            grid-area: 2/4/3/5;
+
+        }
+
+        &:nth-child(3) {
+            grid-area: 2/5/4/6;
+
+        }
+
+        &:nth-child(4) {
+            grid-area: 3/2/4/3;
+        }
+
+        &:nth-child(5) {
+            grid-area: 3/3/4/5;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.card {
+        @for $i from 1 to 6 {         
+           &:nth-child(#{$i}) {           
+               grid-area: card#{$i};                  
+            }                           
+       }                                    
+
+    }
